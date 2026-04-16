@@ -1,16 +1,30 @@
 
 export enum ProjectCategory {
-  SOFTWARE = 'Software Engineering',
-  HARDWARE = 'Hardware & IoT',
-  AI = 'Artificial Intelligence',
-  DESIGN = 'UX/UI Design',
-  ROBOTICS = 'Robotics'
+  ADMINISTRACAO = 'Administração, Economia e Finanças',
+  AUTOMACAO_INDUSTRIAL = 'Automação Industrial',
+  BIOENGENHARIA = 'Bioengenharia',
+  CIBERSEGURANCA = 'Cibersegurança',
+  CIENCIA_DADOS = 'Ciência dos Dados',
+  CLOUD_COMPUTING = 'Computação em Nuvem',
+  CONTROLE_SISTEMAS = 'Controle de Sistemas Dinâmicos',
+  EFICIENCIA_ENERGETICA = 'Eficiência Energética',
+  MOBILIDADE = 'Engenharia da Mobilidade',
+  SOFTWARE = 'Engenharia de Software',
+  INOVACAO_SOCIAL = 'Inovação Social',
+  AI = 'Inteligência Artificial',
+  LOGISTICA = 'Logística e Supply Chain',
+  MANUFATURA_AVANCADA = 'Manufatura Avançada',
+  ROBOTICA = 'Robótica',
+  SIMULACAO = 'Simulação Computacional',
+  EMBARCADOS = 'Sistemas Embarcados',
+  SISTEMAS_INTERATIVOS = 'Sistemas Interativos',
+  SISTEMAS_INFORMACAO = 'Sistemas de Informação',
 }
 
 export enum AwardType {
-  NONE = 'None',
-  FEATURED = 'Falconi Featured Project',
-  EXCELLENCE = 'Falconi Excellence Project'
+  NENHUM = 'Nenhum',
+  DESTAQUE = 'Destaque Falconi',
+  EXCELENCIA = 'Excelência Falconi'
 }
 
 export interface Student {

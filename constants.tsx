@@ -14,179 +14,57 @@ export const COLORS = {
 };
 
 export const PARTNERS = [
-  'Mercedes-Benz', 'WEG', 'Dell', 'TATA', 'Bosch', 'Siemens', 'Embraer', 
-  'Intel', 'Microsoft', 'Google', 'Amazon', 'Meta', 'Tesla', 'Volvo', 
-  'Scania', 'General Electric', 'Schneider Electric', 'Rockwell Automation',
-  'Cisco', 'IBM', 'Oracle', 'HP', 'Lenovo', 'Samsung', 'LG', 'Sony',
-  'Toyota', 'Honda', 'Hyundai', 'Ford', 'General Motors', 'Petrobras',
-  'Vale', 'Suzano', 'Natura', 'Ambev', 'BTG Pactual', 'Itau', 'Santander'
+  'A.C. Camargo','Airis Tecnologia',
 ].sort();
 
 export const MOCK_PROJECTS: Project[] = [
   {
-    id: '1',
-    title: 'Aura Smart Helmets',
-    description: 'Next-gen motorcycle helmet with AR safety overlays.',
-    semester: '2',
-    year: 2023,
-    category: ProjectCategory.HARDWARE,
-    thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/34/RR1-_Dell_Campus.jpg',
-    videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    galleryUrls: [
-      'https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1600192004735-3929497e8838?auto=format&fit=crop&q=80&w=800',
-    ],
-    awardType: AwardType.EXCELLENCE,
-    students: [
-      { id: 's1', name: 'Ana Silva', role: 'Hardware Lead' },
-      { id: 's2', name: 'Marco Polo', role: 'UX Designer' }
-    ],
-    advisor: 'Dr. Elizabeth Stone',
-    longDescription: 'Aura is a smart helmet designed to reduce accidents by providing heads-up display navigation and blind-spot detection via ultrasonic sensors.',
-    tags: ['IoT', 'Safety', 'AR', 'Vision'],
-    partner: 'Mercedes-Benz'
-  },
-  {
-    id: '2',
-    title: 'EcoTrack AI',
-    description: 'Personalized carbon footprint tracker using machine learning.',
-    semester: '1',
-    year: 2024,
-    category: ProjectCategory.AI,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800',
-    galleryUrls: [
-      'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800',
-    ],
-    awardType: AwardType.FEATURED,
-    students: [
-      { id: 's3', name: 'Joao Santos', role: 'ML Engineer' },
-      { id: 's4', name: 'Beatriz Costa', role: 'Data Scientist' }
-    ],
-    advisor: 'Prof. Ricardo Gomes',
-    longDescription: 'EcoTrack uses computer vision to identify groceries and estimate their environmental impact.',
-    tags: ['Sustainability', 'ML', 'Data Science'],
-    partner: 'Dell'
-  },
-  {
-    id: '3',
-    title: 'Industrial Automation 4.0',
-    description: 'Predictive maintenance system for large scale electrical motors.',
-    semester: '1',
-    year: 2024,
-    category: ProjectCategory.HARDWARE,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800',
-    galleryUrls: [
-      'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800',
-    ],
-    awardType: AwardType.NONE,
-    students: [
-      { id: 's5', name: 'Carlos Lima', role: 'Robotics Engineer' },
-      { id: 's6', name: 'Elena Gilbert', role: 'Systems Architect' }
-    ],
-    advisor: 'Dr. Sarah Connor',
-    longDescription: 'Implementing advanced sensor networks for real-time monitoring of industrial machines.',
-    tags: ['Automation', 'Industrial', 'IoT'],
-    partner: 'WEG'
-  },
-  {
-    id: '4',
-    title: 'Smart City Mesh',
-    description: 'Low-latency connectivity network for urban logistics.',
-    semester: '2',
-    year: 2022,
-    category: ProjectCategory.SOFTWARE,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800',
-    galleryUrls: [
-      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800',
-    ],
-    awardType: AwardType.NONE,
-    students: [
-      { id: 's7', name: 'Lucas Ferreira', role: 'Network Engineer' }
-    ],
-    advisor: 'Prof. James Watt',
-    longDescription: 'A robust mesh networking solution designed for high-density urban environments.',
-    tags: ['Networking', 'Logistics', 'Cloud'],
-    partner: 'TATA'
-  },
-  {
-    id: '5',
-    title: 'BioSentry Monitoring',
-    description: 'Wearable health patch for continuous glucose monitoring.',
-    semester: '1',
-    year: 2023,
-    category: ProjectCategory.HARDWARE,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800',
-    galleryUrls: ['https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800'],
-    awardType: AwardType.EXCELLENCE,
-    students: [{ id: 's8', name: 'Gabriel Mendes', role: 'Biomedical Engineer' }],
-    advisor: 'Dr. House',
-    longDescription: 'A non-invasive approach to monitoring blood sugar levels using interstitial fluid analysis.',
-    tags: ['HealthTech', 'Biotech', 'Wearables'],
-    partner: 'Siemens'
-  },
-  {
-    id: '6',
-    title: 'Autonomous Drone Swarm',
-    description: 'Coordinated flight systems for search and rescue operations.',
-    semester: '2',
-    year: 2024,
-    category: ProjectCategory.ROBOTICS,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800',
-    galleryUrls: ['https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800'],
-    awardType: AwardType.FEATURED,
-    students: [{ id: 's9', name: 'Sofia Oliveira', role: 'Robotics Lead' }],
-    advisor: 'Prof. Xavier',
-    longDescription: 'Drones that communicate with each other to map disaster zones 10x faster than traditional methods.',
-    tags: ['Drones', 'AI', 'Rescue'],
-    partner: 'Embraer'
-  },
-  {
-    id: '7',
-    title: 'Quantum Ledger',
-    description: 'Post-quantum cryptography for financial systems.',
-    semester: '1',
-    year: 2022,
-    category: ProjectCategory.SOFTWARE,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800',
-    galleryUrls: ['https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800'],
-    awardType: AwardType.NONE,
-    students: [{ id: 's10', name: 'Arthur Lima', role: 'Security Analyst' }],
-    advisor: 'Dr. Satoshi',
-    longDescription: 'Securing the future of banking against quantum computing threats.',
-    tags: ['Crypto', 'Security', 'Fintech'],
-    partner: 'BTG Pactual'
-  },
-  {
-    id: '8',
-    title: 'Urban Hydroponics',
-    description: 'Fully automated vertical farming for dense cities.',
-    semester: '2',
-    year: 2023,
-    category: ProjectCategory.DESIGN,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=800',
-    galleryUrls: ['https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=800'],
-    awardType: AwardType.EXCELLENCE,
-    students: [{ id: 's11', name: 'Mariana Duarte', role: 'Product Designer' }],
-    advisor: 'Prof. Gaia',
-    longDescription: 'Feeding the future with low-water, high-yield vertical systems.',
-    tags: ['AgroTech', 'Design', 'Sustainability'],
-    partner: 'Natura'
-  },
-    {
-    id: '1910',
-    title: 'Sport Club Corinthians Paulista',
-    description: 'Corinthians vence o Vasco da Gama por 2 a 1 no Maracaná e levanta sua quarta Copa do Brasil',
+    id: '202502001',
+    title: 'Impressão 3D de estabilizador bucal para radioterapia',
+    description: '',
     semester: '2',
     year: 2025,
-    category: ProjectCategory.DESIGN,
-    thumbnailUrl: 'https://static-goengines.gocase.com.br/uploads/image/349415/src/5c3134417a50046a4bb8033e07ed4366.png',
-    galleryUrls: ['https://static.gazetaesportiva.com/uploads/2025/12/AFP__20251221__88TF83M__v6__HighRes__TopshotFblBraCupVascoCorinthians.webp'],
-    awardType: AwardType.EXCELLENCE,
-    students: [{ id: 's13', name: 'Memphis Depay', role: 'Product Designer' },
-    { id: 's14', name: 'Yuri Alberto', role: 'Product Creator' }],
-    advisor: 'Prof. Dorival Junior',
-    longDescription: 'O MARACANA É NOSSO',
-    tags: ['AgroTech', 'Design', 'Sustainability'],
-    partner: 'Natura'
-  }
+    category: ProjectCategory.BIOENGENHARIA,
+    thumbnailUrl: 'https://neofeed.com.br/wp-content/uploads/2024/10/ac-camargo-fachada.webp',
+    videoUrl: '',
+    galleryUrls: [
+      ''
+    ],
+    awardType: AwardType.NENHUM,
+    students: [
+      { id: '22610459', name: 'Bruno Alencar Braghette', role: 'Engenharia Mecânica' },
+      { id: '20610371', name: 'Paulo Augusto dos Passos Oliveira', role: 'Engenharia Mecânica' },
+      { id: '21610342', name: 'Daniel Vergamini Luna Frussa', role: 'Engenharia Mecânica' },
+      { id: '22610573', name: 'Ruy de Paula Souza Neto', role: 'Engenharia Mecânica' },
+    ],
+    advisor: 'Raphael Galdino dos Santos',
+    longDescription: 'Dispositivos como bolus e estabilizador bucal são utilizados durante a radioterapia para melhor eficácia do tratamento. O estabilizador bucal e o bolus (utilizado em outras áreas do corpo) são métodos pioneiros do A.C.Camargo que permitem um posicionamento adequado do paciente durante a sessão de radioterapia, o qual é essencial para garantir a precisão na entrega da dose de radiação ao tumor, minimizando danos aos tecidos saudáveis. O bolus e o estabilizador bucal garantem um posicionamento consistente em cada sessão e visam também o conforto do paciente. Esses materiais são produzidos na fase de planejamento do tratamento, com apoio de imagens como tomografias e ressonâncias, para definir o posicionamento ideal e a área exata a ser tratada e definindo o formato, molde e dimensões do bolus ou estabilizador. Após medições, a equipe segue para a confecção dos dispositivos que é feita de forma individual e artesanal. A equipe desprende algumas horas na confecção dos mesmos. Em resumo, o posicionamento do paciente influencia diretamente a eficácia e a segurança do tratamento, sendo essencial a colaboração entre o paciente, o oncologista e a equipe de radioterapia. Desta forma, o objetivo desta proposta seria customizar a confecção destes dispositivos. Nesta proposta teria a inclusão de pacientes com indicação de confecção do estabilizador bucal e bolus.',
+    tags: ['3D printing','Bioengenharia'],
+    partner: 'A.C. Camargo'
+  },
+  {
+    id: '202502002',
+    title: 'Mapeamento de produtos em supermercado',
+    description: 'Criação de um sistema de mapeamento dinâmico e adaptativo que reconstrói a planta do supermercado e otimiza rotas com base na análise autônoma do fluxo e comportamento dos carrinhos de compras.',
+    semester: '2',
+    year: 2025,
+    category: ProjectCategory.EMBARCADOS,
+    thumbnailUrl: 'https://media.licdn.com/dms/image/v2/D4D0BAQG89u7a-qc-mg/company-logo_200_200/B4DZUl2CxbHkAI-/0/1740096679438/airis_tecnologia_logo?e=1778112000&v=beta&t=CxWB886z4esYN8cf0JN8YoJL8Ecz3iqnx5mlrw4K9ZY',
+    galleryUrls: [
+      '',
+    ],
+    awardType: AwardType.NENHUM,
+    students: [
+      { id: '23610764', name: 'Ananda Julia Galvão Campêlo', role: 'Engenharia de Computação' },
+      { id: '21620395', name: 'Kevin Nagayuki Shinohara', role: 'Engenharia de Computação' },
+      { id: '19610496', name: 'Luca Cazzolato Machado', role: 'Engenharia de Computação' },      
+      { id: '22610435', name: 'Thiago Gonçalves Guadagnoli de Sousa', role: 'Engenharia de Computação' },      
+
+    ],
+    advisor: 'Vinicius Licks',
+    longDescription: 'Criação de um sistema de mapeamento dinâmico e inteligente que reconstrói a planta de supermercados e otimiza rotas a partir do comportamento de fluxo dos carrinhos.',
+    tags: ['Computer Vision', 'IoT', 'Data Science'],
+    partner: 'Airis Tecnologia'
+  },
+  
 ];
