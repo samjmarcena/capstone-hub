@@ -30,13 +30,13 @@ const App: React.FC = () => {
       const matchesPartner = selectedPartner === 'All' || p.partner === selectedPartner;
       const matchesYear = selectedYear === 'All' || p.year.toString() === selectedYear;
       const matchesTag = selectedTag === 'All' || p.tags.includes(selectedTag);
-      const matchesAward = awardFilter === 'All' || p.awardType !== AwardType.NONE;
+      const matchesAward = awardFilter === 'All' || p.awardType !== AwardType.NENHUM;
       return matchesPartner && matchesYear && matchesTag && matchesAward;
     });
   }, [selectedPartner, selectedYear, selectedTag, awardFilter]);
 
   const awardedOnlyProjects = useMemo(() => 
-    MOCK_PROJECTS.filter(p => p.awardType !== AwardType.NONE), 
+    MOCK_PROJECTS.filter(p => p.awardType !== AwardType.NENHUM), 
   []);
 
   const filteredPartners = useMemo(() => {

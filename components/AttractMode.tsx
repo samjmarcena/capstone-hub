@@ -43,7 +43,7 @@ const AttractMode: React.FC<AttractModeProps> = ({ projects, onInteract }) => {
               color: COLORS.WHITE
             }}
           >
-            {currentProject.awardType === AwardType.EXCELLENCE ? (
+            {currentProject.awardType === AwardType.EXCELENCIA ? (
               <div className="relative w-5 h-5 flex items-center justify-center">
                 <i className="fas fa-star absolute text-[12px] -translate-x-0.5 -translate-y-0.5" style={{ color: COLORS.BLACK }}></i>
                 <i className="fas fa-star absolute text-[12px] translate-x-0.5 translate-y-0.5" style={{ color: COLORS.YELLOW }}></i>

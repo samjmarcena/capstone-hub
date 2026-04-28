@@ -19,14 +19,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       <div className="relative z-10 p-6 flex justify-between items-start shrink-0">
         
         {/* SELO EXCELLENCE - 3 Estrelas */}
-        {project.awardType === AwardType.EXCELLENCE && (
+        {project.awardType === AwardType.EXCELENCIA && (
           <div className="flex flex-col items-center">
             <div className="bg-red-600 p-2.5 rounded-2xl shadow-2xl border border-white/30 flex gap-1 items-center">
               <i className="fas fa-star text-white text-[10px] opacity-70"></i>
               <i className="fas fa-star text-white text-[16px]"></i>
               <i className="fas fa-star text-white text-[10px] opacity-70"></i>
             </div>
-            <span className="text-[8px] font-black text-white uppercase mt-1 tracking-tighter drop-shadow-md">Excellence</span>
+            <span className="text-[8px] font-black text-white uppercase mt-1 tracking-tighter drop-shadow-md">EXCELÊNCIA</span>
           </div>
         )}
         

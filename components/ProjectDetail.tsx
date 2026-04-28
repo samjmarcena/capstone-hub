@@ -32,22 +32,23 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack }) => {
               {project.category}
             </span>
             
-            {project.awardType === AwardType.EXCELLENCE && (
+            {project.awardType === AwardType.EXCELENCIA && (
               <span 
                 className="flex items-center gap-2 text-white text-[10px] font-black px-4 py-2 rounded-full shadow-lg border border-white/20"
                 style={{ backgroundColor: COLORS.PRIMARY }}
               >
                 <i className="fas fa-star text-yellow-400"></i>
-                FALCONI EXCELLENCE
+                Excelência Capstone FALCONI-INSPER
               </span>
             )}
 
-            {project.awardType === AwardType.FEATURED && (
+            {project.awardType === AwardType.DESTAQUE && (
               <span 
                 className="flex items-center gap-2 text-white text-[10px] font-black px-4 py-2 rounded-full shadow-lg border border-white/20"
                 style={{ backgroundColor: COLORS.PRIMARY }}
               >
-                <i className="fas fa-star text-white"></i> FALCONI FEATURED
+                <i className="fas fa-star text-white"></i>
+                Destaque Capstone FALCONI-INSPER
               </span>
             )}
 
@@ -91,7 +92,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack }) => {
               </span>
             ))}
           </div>
-          <h3 className="text-2xl font-black mb-4" style={{ color: COLORS.BLACK }}>Resumo Executivo</h3>
+          <h3 className="text-2xl font-black mb-4" style={{ color: COLORS.BLACK }}>Resumo</h3>
           <p className="text-gray-600 leading-relaxed text-xl font-medium">
             {project.longDescription}
           </p>
@@ -154,7 +155,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack }) => {
               </div>
               <div>
                 <p className="font-black text-base text-gray-900">{project.advisor}</p>
-                <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Supervisor de Pesquisa</p>
+                <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Professor</p>
               </div>
             </div>
             

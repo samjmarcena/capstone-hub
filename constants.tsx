@@ -314,7 +314,7 @@ export const MOCK_PROJECTS: Project[] = [
       { id: '1376', name: 'Gustavo de Lorenzi Cancellier Katz', role: 'Engenharia Mecatrônica' },
       { id: '1387', name: 'Isabella Leão Pereira Lima', role: 'Engenharia Mecatrônica' },
       { id: '1215', name: 'Ana Beatriz Parra Ferreira', role: 'Engenharia Mecatrônica' },
-      { id: '1213', name: 'Rodrigo Bandeira Villela', role: 'Engenharia Mecânica' },                   
+      { id: '20610251', name: 'Rodrigo Bandeira Villela', role: 'Engenharia Mecânica' },                   
     ],
     advisor: 'Victor Antonio Seixas de Menezes Paiva',
     longDescription: 'Desenvolvimento de algoritmos de visão computacional e ciência de dados para refinar modelos de elevação gratuitos, removendo ruídos e aumentando a resolução para simulações precisas de inundações urbanas.',
