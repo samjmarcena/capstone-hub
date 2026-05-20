@@ -8,6 +8,7 @@ export enum ProjectCategory {
   CLOUD_COMPUTING = 'Computação em Nuvem',
   CONTROLE_SISTEMAS = 'Controle de Sistemas Dinâmicos',
   EFICIENCIA_ENERGETICA = 'Eficiência Energética',
+  HARDWARE = 'Hardware & IoT',
   MOBILIDADE = 'Engenharia da Mobilidade',
   SOFTWARE = 'Engenharia de Software',
   INOVACAO_SOCIAL = 'Inovação Social',
