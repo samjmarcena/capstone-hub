@@ -35,7 +35,7 @@ const AttractMode: React.FC<AttractModeProps> = ({ projects, onInteract }) => {
 
       {/* Content */}
       <div className="absolute bottom-20 left-10 right-10 text-white text-left">
-        {currentProject.awardType !== AwardType.NONE && (
+        {currentProject.awardType !== AwardType.NENHUM && (
           <div 
             className="inline-flex items-center gap-3 px-4 py-2 rounded-full mb-6 font-black text-[11px] uppercase tracking-widest border border-white/20 shadow-2xl backdrop-blur-md"
             style={{ 
@@ -65,12 +65,12 @@ const AttractMode: React.FC<AttractModeProps> = ({ projects, onInteract }) => {
         <div className="flex items-center gap-4 text-xs opacity-70 uppercase tracking-widest font-black">
           <span>{currentProject.category}</span>
           <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: COLORS.PRIMARY }}></span>
-          <span>Semester {currentProject.year}.{currentProject.semester}</span>
+          <span>Semestre {currentProject.year}.{currentProject.semester}</span>
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 animate-bounce">
-        <p className="text-[10px] font-black uppercase tracking-widest">Touch anywhere to explore</p>
+        <p className="text-[10px] font-black uppercase tracking-widest">Toque em qualquer lugar para explorar</p>
       </div>
 
       {/* Brand Logo Overlay */}

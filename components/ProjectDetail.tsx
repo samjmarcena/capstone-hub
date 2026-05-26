@@ -131,7 +131,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack }) => {
         {/* Team & Advisor */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <section className="bg-gray-50 p-8 rounded-[32px] border border-gray-100">
-            <h3 className="text-[10px] font-black uppercase text-gray-400 mb-6 tracking-widest">Criadores</h3>
+            <h3 className="text-[10px] font-black uppercase text-gray-400 mb-6 tracking-widest">Estudantes</h3>
             <div className="grid gap-6">
               {project.students.map(student => (
                 <div key={student.id} className="flex items-center gap-4">
